@@ -1,3 +1,3 @@
 # fundamentos-javascript
-## Treinamentos em javascript
+## Treinamentos variados em javascript
 

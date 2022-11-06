@@ -82,6 +82,12 @@ console.log(upperCaseCities);
 
 const names = ['João Grilo', 'Chicó', 'Rosinha']
 
+let HTMLTemplate = '';
+
+for(i=0; i< names.length; i++){
+  console.log(`<li>${names[i]}</li>`);
+}
+
 /*
   06 - Comente o console.log acima e:
 
@@ -92,6 +98,13 @@ const names = ['João Grilo', 'Chicó', 'Rosinha']
 */
 
 const numbers = ['91', '5', '30', '97', '83', '31']
+
+let total = 0
+
+for(i=0; i<numbers.length; i++){
+  total = total + Number(numbers[i])
+}
+console.log(total === 337);
 
 /*
   07 - Comente o console.log acima.
@@ -117,3 +130,12 @@ const arrays = [
   [8, 32, 16],
   [2, 8, 4]
 ]
+
+let totals = 0
+for(i =0;i<arrays.length; i++){
+  for(j=0; j<arrays[i].length; j++){
+    totals = totals + Number(arrays[i][j])
+  }
+}
+
+console.log(totals);

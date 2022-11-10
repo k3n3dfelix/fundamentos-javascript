@@ -175,13 +175,15 @@ const a = 1
 //   console.log('O valor de "a" é qualquer número, exceto 0 e 1')
 // }
 
-switch(a){
+const number = 0
+const numberMessage = 'O valor de "a" é'
+switch(number){
   case 0:
-    console.log(`O valor de "a" é ${a}`)
+    console.log(`${numberMessage} ${number}`)
     break;
   case 1:
-    console.log(`O valor de "a" é ${a}`)
+    console.log(`${numberMessage} ${number}`)
     break;
   default:
-    console.log('O valor de "a" é qualquer número, exceto 0 e 1')
+    console.log(`${numberMessage} qualquer número, exceto 0 e 1`)
 }

@@ -81,12 +81,28 @@ console.log(isExistsInArray('kene', ['maria', 'joao', 'kened']))
     argumentos em sua invocação;
 */
 
+const concatenateArray = (firstArray, secondArray) => {
+  let arrayConcatenated = []
+  arrayConcatenated = arrayConcatenated.concat(firstArray, secondArray)
+
+  return arrayConcatenated;
+}
+
+console.log(concatenateArray([1,2,3], [4,5,6]))
+
 /*
   07
 
   - Crie uma função que retorna o array passado como argumento em sua invocação,  
     mas com o último item removido.
 */
+
+const removeLastItem = (array = []) => {
+  array.pop()
+  return array
+}
+
+console.log(removeLastItem([1,2,3]))
 
 /*
   08
@@ -95,6 +111,16 @@ console.log(isExistsInArray('kene', ['maria', 'joao', 'kened']))
     invocação é null.
 */
 
+const isNull = valor => {
+  
+  if( valor === null){
+    return 'é null'
+  }else{
+    return 'não é null'
+  }
+}
+
+console.log(isNull(null))
 /*
   09
 
@@ -106,6 +132,16 @@ console.log(isExistsInArray('kene', ['maria', 'joao', 'kened']))
     foi exibido.
 */
 
+const invokeCallBack = callback => {
+
+  callback();
+}
+
+const printName =  () => {
+  console.log('Hello Kened')
+}
+
+invokeCallBack(printName);
 /*
   10
 
